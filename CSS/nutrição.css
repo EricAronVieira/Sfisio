@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    margin-top: 70px; /* Compensa o header fixo */
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center; /* Centraliza os itens no contêiner */
+    align-items: center;
+    box-shadow: 0px 4px 10px #39c202e1;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 70px;
+    margin: 0 auto; /* Centraliza o conteúdo do header */
+  }
+  
+  /* Contêiner de navegação */
+  .nav-container {
+    display: flex;
+    justify-content: space-between; /* Logo à esquerda e menu à direita */
+    align-items: center;
+    max-width: 1200px; /* Define uma largura máxima para limitar o tamanho */
+    margin: 0 auto;
+    width: 100%; /* Garante que ocupe toda a largura */
+  }
+  
+  /* Logo */
+  .logo {
+    width: 300px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+  }
+  
+  /* Menu */
+  .menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilo dos itens do menu */
+  .menu li {
+    margin-left: 20px;
+    position: relative;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    font-family: 'Lucida Sans', sans-serif;
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+    transition: color 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Efeito de hover no menu */
+  .menu a:hover {
+    color: #005f00;
+    transform: scale(1.1);
+  }
+  
+  /* Separador de itens do menu */
+  .menu a:after {
+    content: "|";
+    position: absolute;
+    right: -15px;
+  }
+  
+  .menu li:last-child a:after {
+    content: "";
+  }
+  
+  /* Submenu */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1200;
+  }
+  
+  .menu li:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li {
+    margin-bottom: 10px;
+  }
+  
+  .submenu a {
+    font-size: 16px;
+    color: #333333;
+  }
+  
+  .submenu a:hover {
+    color: #000000;
+  }
+  
+  .titulo h1
+  {
+    font-size: 35px;
+    color: #004e04;
+    margin-bottom: 50px;
+    text-align: left;
+    margin-left: 150px;
+    margin-top: 150px;
+    
+  }
+  
+  .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .destaque {
+    width: 400px;/* Ajuste o tamanho da imagem conforme necessário */
+    border-radius: 10px; /* Ajuste o raio das bordas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra para destacar a imagem */
+  margin: 10px;
+  margin-left: -30px;
+  }
+  
+  .texto {
+    width: 50%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    text-align: justify;
+  }
+  
+  .texto02
+  {
+  font-size: 20px;
+  color:#000000
+  margin-bottom: 20px;
+  text-align: justify;
+  margin: 2%;
+  }
+  .texto02 strong
+  {
+    color: #004e04;
+    font-weight: bold;
+    }
+  
+    .texto02 blockquote
+    {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+  .text02 h1
+  {
+    color: #004e04;
+    font-size: 25px;
+   }
+  
+   #linkwhatsapp {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #129b00; /* Cor característica do WhatsApp */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2%;
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #1eb84c; /* Efeito de hover, cor ligeiramente mais escura */
+  }
+  
+  .whatsapp-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .numero-clinica {
+    background-color: white;
+    color: #129b00;
+    padding: 10px 10px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  footer p {
+    margin: 8px 0;
+  }
+  
+  footer nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  footer nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  footer nav ul li a:hover {
+    color: #035200;
+  }
+  
+  footer .social-media {
+    margin-top: 10px;
+  }
+  
+  footer .social-media a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  footer .social-media a img {
+    width: 24px;
+    height: 24px;
+  }
